@@ -23,6 +23,8 @@ def add():
     task = request.form.get("task")
     if task:
         todos.insert_one({"task": task, "done": False})
+    else:
+        print("hi")
     return redirect(url_for("index"))
 
 # Toggle done/undone
