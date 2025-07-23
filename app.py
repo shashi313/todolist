@@ -4,10 +4,10 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 
 app = Flask(__name__)
-username = quote_plus("kiran")
-password = quote_plus("Nihar@123")
+username = quote_plus("shashi")
+password = quote_plus("Honey@31")
 # MongoDB setup
-client = MongoClient(f"mongodb+srv://{username}:{password}@cluster0.aotevze.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient(f"mongodb+srv://{username}:{password}@cluster.aotevze.mongodb.net/?retryWrites=true&w=majority&appName=Cluster")
 db = client["todo_db"]
 todos = db["todos"]
 
